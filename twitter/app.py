@@ -7,7 +7,6 @@ import afinn
 import time
 import tkinter as Tkinter
 from map import Map
-import nltk
 from textblob import TextBlob
 
 saveFile = "data.sav"
@@ -69,9 +68,7 @@ def createWindow():
 	BTN_Map = Tkinter.Button(top,text = "map", command=createMap)
 	BTN_Map.pack();
 	
-	BTN_NltkDownload = Tkinter.Button(top,text = "download NLTK", command=nltk.download)
-	BTN_NltkDownload.pack();
-	
+		
 	top.mainloop()
 
 def createMap():
